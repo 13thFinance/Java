@@ -9,7 +9,7 @@
 //what I learned: contrary to popular belief, java can be made to go fast
 
 import java.time.LocalTime;
-import java.util.Random;
+import java.util.Random; //dont need random, but you can use it if you want to fill the array with random number
 
 public class HelloWorld{
     
@@ -26,7 +26,9 @@ public class HelloWorld{
         int size = 8000;
         
         //fill up an array of 8000 ints
-        int[] myIntArray = new int[size]; //this will have garbage in it which is fine
+         //this will have garbage in it which is fine, or will have 0s
+         //we dont really care for the purposes of this test, but if you want you can add random number in
+        int[] myIntArray = new int[size]; 
         
         //get a time stamp
         LocalTime now = LocalTime.now();
